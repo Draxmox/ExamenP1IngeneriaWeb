@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discovery homepage: trending videos, featured stories and the latest from your favorite shows.">
+  <title>Discovery | Homepage</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- BARRA "LIVE NOW" -->
+  <div class="live-bar">
+    <div class="container live-bar__inner">
+      <a class="live-bar__show" href="#modal">
+        <span class="live-bar__info">
+          <span class="live-bar__label">Live Now</span>
+          <strong class="live-bar__title">The Repair Shop</strong>
+        </span>
+        <span class="live-bar__play" aria-hidden="true">▶</span>
+      </a>
+      <a class="live-bar__stream" href="#modal">
+        <span class="live-bar__cta">Stream Now</span>
+        <img class="live-bar__logo" src="img/logo-discovery-plus.png" alt="discovery+">
+      </a>
+    </div>
+  </div>
+
+  <!-- CABECERA -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="header__logo" href="#">Discovery</a>
+      <nav class="header__nav" aria-label="Main">
+        <ul class="header__list">
+          <li class="header__item"><a class="header__link" href="#">Shows</a></li>
+          <li class="header__item"><a class="header__link" href="#">DNews</a></li>
+          <li class="header__item"><a class="header__link" href="#">Nature</a></li>
+          <li class="header__item"><a class="header__link" href="#">Exploration</a></li>
+          <li class="header__item"><a class="header__link" href="#">Space</a></li>
+          <li class="header__item"><a class="header__link" href="#">Science</a></li>
+          <li class="header__item"><a class="header__link" href="#">Motor</a></li>
+          <li class="header__item"><a class="header__link" href="#">Schedule</a></li>
+          <li class="header__item"><a class="header__link" href="#">More</a></li>
+        </ul>
+      </nav>
+      <button class="header__search" type="button" aria-label="Search">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="10" cy="10" r="6"></circle>
+          <path d="M15 15l6 6"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO (CSS Grid: 2 columnas en escritorio) -->
+    <section class="hero container" aria-label="Featured stories">
+      <article class="story">
+        <img class="story__image" src="img/hero-yule-goat.jpg" alt="Giant straw Yule Goat lit with Christmas lights at night">
+        <div class="story__body">
+          <p class="story__kicker">EXPLORATION</p>
+          <h2 class="story__title story__title--large"><a href="#">6 Global Christmas Traditions</a></h2>
+        </div>
+      </article>
+      <div class="hero__side">
+        <article class="story story--side">
+          <img class="story__image story__image--thumb" src="img/side-cupcakes.png" alt="Holiday beet cupcakes on a kitchen counter">
+          <div class="story__body">
+            <p class="story__kicker">ALASKA: THE LAST FRONTIER</p>
+            <h3 class="story__title"><a href="#">Learn How to Make Holiday Beet Cupcakes, Kilcher Style</a></h3>
+          </div>
+        </article>
+        <article class="story story--side">
+          <img class="story__image story__image--thumb" src="img/side-reindeer.jpg" alt="Reindeer in the snow">
+          <div class="story__body">
+            <p class="story__kicker">NATURE</p>
+            <h3 class="story__title"><a href="#">Winter’s Hardest Working Mammals – Reindeer!</a></h3>
+          </div>
+        </article>
+        <article class="story story--side">
+          <img class="story__image story__image--thumb" src="img/side-sleigh.jpg" alt="Reindeer pulling a sleigh across the snow">
+          <div class="story__body">
+            <p class="story__kicker">SCIENCE</p>
+            <h3 class="story__title"><a href="#">Time Dilation, Special Relativity, and Santa’s Delivery Schedule</a></h3>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CARRUSEL: Trending Videos -->
+    <section class="section section--dark">
+      <div class="container">
+        <h2 class="section__title">Trending Videos</h2>
+      </div>
+      <ul class="carousel container" tabindex="0" aria-label="Trending Videos">
+        <li class="carousel__item carousel__item--video">
+          <article class="card">
+            <div class="card__media">
+              <img class="card__image" src="img/trending-01.jpg" alt="MOONSHINERS Holiday Cocktail: Cherry Moon-Mosa" loading="lazy">
+              <a class="card__cta" href="#modal">Watch Now <span class="card__icon" aria-hidden="true">▶</span></a>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title card__title--light"><a href="#">MOONSHINERS Holiday Cocktail: Cherry Moon-Mosa</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--video">
+          <article class="card">
+            <div class="card__media">
+              <img class="card__image" src="img/trending-02.jpg" alt="MOONSHINERS Holiday Cocktail: Hazelnut Holiday" loading="lazy">
+              <a class="card__cta" href="#modal">Watch Now <span class="card__icon" aria-hidden="true">▶</span></a>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title card__title--light"><a href="#">MOONSHINERS Holiday Cocktail: Hazelnut Holiday</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--video">
+          <article class="card">
+            <div class="card__media">
+              <img class="card__image" src="img/trending-03.jpg" alt="Nature is Fly | Butterfly Beauty in Arizona" loading="lazy">
+              <a class="card__cta" href="#modal">Watch Now <span class="card__icon" aria-hidden="true">▶</span></a>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title card__title--light"><a href="#">Nature is Fly | Butterfly Beauty in Arizona</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--video">
+          <article class="card">
+            <div class="card__media">
+              <img class="card__image" src="img/trending-04.jpg" alt="Dr. Jeff | Get Involved with Planned Pethood" loading="lazy">
+              <a class="card__cta" href="#modal">Watch Now <span class="card__icon" aria-hidden="true">▶</span></a>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title card__title--light"><a href="#">Dr. Jeff | Get Involved with Planned Pethood</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--video">
+          <article class="card">
+            <div class="card__media">
+              <img class="card__image" src="img/trending-05.jpg" alt="Nature in Focus | The Sand Dunes of Oceano" loading="lazy">
+              <a class="card__cta" href="#modal">Watch Now <span class="card__icon" aria-hidden="true">▶</span></a>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title card__title--light"><a href="#">Nature in Focus | The Sand Dunes of Oceano</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--video">
+          <article class="card">
+            <div class="card__media">
+              <img class="card__image" src="img/trending-06.jpg" alt="BattleBots | Bigger, Better, Badder" loading="lazy">
+              <a class="card__cta" href="#modal">Watch Now <span class="card__icon" aria-hidden="true">▶</span></a>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title card__title--light"><a href="#">BattleBots | Bigger, Better, Badder</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--video">
+          <article class="card">
+            <div class="card__media">
+              <img class="card__image" src="img/trending-07.jpg" alt="Nature is Fly | Risking it All for a Highline" loading="lazy">
+              <a class="card__cta" href="#modal">Watch Now <span class="card__icon" aria-hidden="true">▶</span></a>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title card__title--light"><a href="#">Nature is Fly | Risking it All for a Highline</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--video">
+          <article class="card">
+            <div class="card__media">
+              <img class="card__image" src="img/trending-08.jpg" alt="Space Launch Live | Crew-3 Liftoff to the ISS" loading="lazy">
+              <a class="card__cta" href="#modal">Watch Now <span class="card__icon" aria-hidden="true">▶</span></a>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title card__title--light"><a href="#">Space Launch Live | Crew-3 Liftoff to the ISS</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--video">
+          <article class="card">
+            <div class="card__media">
+              <img class="card__image" src="img/trending-09.jpg" alt="Nature In Focus | Yellowstone National Park, Generations of Beauty and History" loading="lazy">
+              <a class="card__cta" href="#modal">Watch Now <span class="card__icon" aria-hidden="true">▶</span></a>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title card__title--light"><a href="#">Nature In Focus | Yellowstone National Park, Generations of Beauty and History</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--video">
+          <article class="card">
+            <div class="card__media">
+              <img class="card__image" src="img/trending-10.jpg" alt="Meet Ruby Raney!" loading="lazy">
+              <a class="card__cta" href="#modal">Watch Now <span class="card__icon" aria-hidden="true">▶</span></a>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title card__title--light"><a href="#">Meet Ruby Raney!</a></h3>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <!-- CARRUSEL: More of What You Love -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">More of What You Love</h2>
+      </div>
+      <ul class="carousel container" tabindex="0" aria-label="More of What You Love">
+        <li class="carousel__item carousel__item--square">
+          <article class="card">
+            <img class="card__image card__image--square" src="img/more-01.jpg" alt="Moonshiners’ Mike Cockrell Ties the Knot After 7-Year Engagement" loading="lazy">
+            <div class="card__body">
+              <h3 class="card__title"><a href="#">Moonshiners’ Mike Cockrell Ties the Knot After 7-Year Engagement</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--square">
+          <article class="card">
+            <img class="card__image card__image--square" src="img/more-02.jpg" alt="Warm Hazelnut Cocktail Perfect for the Holiday Season" loading="lazy">
+            <div class="card__body">
+              <h3 class="card__title"><a href="#">Warm Hazelnut Cocktail Perfect for the Holiday Season</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--square">
+          <article class="card">
+            <img class="card__image card__image--square" src="img/more-03.jpg" alt="The Mystery at Blind Frog Ranch Returns with More Secrets" loading="lazy">
+            <div class="card__body">
+              <h3 class="card__title"><a href="#">The Mystery at Blind Frog Ranch Returns with More Secrets</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--square">
+          <article class="card">
+            <img class="card__image card__image--square" src="img/more-04.jpg" alt="David Dobrik Explores Dubai For The First Time Ever" loading="lazy">
+            <div class="card__body">
+              <h3 class="card__title"><a href="#">David Dobrik Explores Dubai For The First Time Ever</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--square">
+          <article class="card">
+            <img class="card__image card__image--square" src="img/more-05.jpg" alt="Escape the Holiday Chaos with this Surprisingly Soothing Antique Restoration Show" loading="lazy">
+            <div class="card__body">
+              <h3 class="card__title"><a href="#">Escape the Holiday Chaos with this Surprisingly Soothing Antique Restoration Show</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--square">
+          <article class="card">
+            <img class="card__image card__image--square" src="img/more-06.jpg" alt="Paws Up for Planned Pethood: Dr. Jeff’s Mission to Reduce Pet Overpopulation" loading="lazy">
+            <div class="card__body">
+              <h3 class="card__title"><a href="#">Paws Up for Planned Pethood: Dr. Jeff’s Mission to Reduce Pet Overpopulation</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--square">
+          <article class="card">
+            <img class="card__image card__image--square" src="img/more-07.png" alt="BERING SEA GOLD’s Emily Riedel is Expecting!" loading="lazy">
+            <div class="card__body">
+              <h3 class="card__title"><a href="#">BERING SEA GOLD’s Emily Riedel is Expecting!</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--square">
+          <article class="card">
+            <img class="card__image card__image--square" src="img/more-08.jpg" alt="BattleBots will Crown Next Champ in Vegas in New Season" loading="lazy">
+            <div class="card__body">
+              <h3 class="card__title"><a href="#">BattleBots will Crown Next Champ in Vegas in New Season</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--square">
+          <article class="card">
+            <img class="card__image card__image--square" src="img/more-09.jpg" alt="’Tis the Season on discovery+" loading="lazy">
+            <div class="card__body">
+              <h3 class="card__title"><a href="#">’Tis the Season on discovery+</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--square">
+          <article class="card">
+            <img class="card__image card__image--square" src="img/more-10.jpg" alt="Tour the World with Discovering David Dobrik" loading="lazy">
+            <div class="card__body">
+              <h3 class="card__title"><a href="#">Tour the World with Discovering David Dobrik</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--square">
+          <a class="carousel__more" href="#">Stream Now on discovery+</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- CARRUSEL: Catch Up -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Catch Up</h2>
+      </div>
+      <ul class="carousel carousel--single container" tabindex="0" aria-label="Catch Up">
+        <li class="carousel__item carousel__item--video">
+          <article class="card">
+            <div class="card__media">
+              <img class="card__image" src="img/catchup-01.jpg" alt="Barber’s Pole, Enwonwu Painting, Writing Slope" loading="lazy">
+              <a class="card__cta" href="#modal">Watch Now <span class="card__icon" aria-hidden="true">▶</span></a>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title"><a href="#">Barber’s Pole, Enwonwu Painting, Writing Slope</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--video">
+          <article class="card">
+            <div class="card__media">
+              <img class="card__image" src="img/catchup-01.jpg" alt="Cine Projector, Spinning Wheel, Wicker Chair" loading="lazy">
+              <a class="card__cta" href="#modal">Watch Now <span class="card__icon" aria-hidden="true">▶</span></a>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title"><a href="#">Cine Projector, Spinning Wheel, Wicker Chair</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--video">
+          <article class="card">
+            <div class="card__media">
+              <img class="card__image" src="img/catchup-03.png" alt="Bass Pro Tour: 2021 Heavy Hitters Championship Round - Raleigh" loading="lazy">
+              <a class="card__cta" href="#modal">Watch Now <span class="card__icon" aria-hidden="true">▶</span></a>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title"><a href="#">Bass Pro Tour: 2021 Heavy Hitters Championship Round - Raleigh</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--video">
+          <article class="card">
+            <div class="card__media">
+              <img class="card__image" src="img/catchup-04.jpg" alt="Captain Philips: Somali Pirates Inside Story" loading="lazy">
+              <a class="card__cta" href="#modal">Watch Now <span class="card__icon" aria-hidden="true">▶</span></a>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title"><a href="#">Captain Philips: Somali Pirates Inside Story</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--video">
+          <article class="card">
+            <div class="card__media">
+              <img class="card__image" src="img/catchup-05.jpg" alt="Gold Will Surrender" loading="lazy">
+              <a class="card__cta" href="#modal">Watch Now <span class="card__icon" aria-hidden="true">▶</span></a>
+            </div>
+            <div class="card__body">
+              <p class="card__series">Gold Rush: Dave Turin’s Lost Mine</p>
+              <h3 class="card__title"><a href="#">Gold Will Surrender</a></h3>
+              <p class="card__meta">41:00 · Season 2, Episode 4</p>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--video">
+          <article class="card">
+            <div class="card__media">
+              <img class="card__image" src="img/catchup-06.jpg" alt="Vanishing Gold" loading="lazy">
+              <a class="card__cta" href="#modal">Watch Now <span class="card__icon" aria-hidden="true">▶</span></a>
+            </div>
+            <div class="card__body">
+              <p class="card__series">Gold Rush: Dave Turin’s Lost Mine</p>
+              <h3 class="card__title"><a href="#">Vanishing Gold</a></h3>
+              <p class="card__meta">41:00 · Season 2, Episode 3</p>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--video">
+          <article class="card">
+            <div class="card__media">
+              <img class="card__image" src="img/catchup-01.jpg" alt="Penny Farthing, Leather Briefcase, Clocking on Clock" loading="lazy">
+              <a class="card__cta" href="#modal">Watch Now <span class="card__icon" aria-hidden="true">▶</span></a>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title"><a href="#">Penny Farthing, Leather Briefcase, Clocking on Clock</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--video">
+          <article class="card">
+            <div class="card__media">
+              <img class="card__image" src="img/catchup-01.jpg" alt="Rocking Horse, Pinball Machine, Barograph" loading="lazy">
+              <a class="card__cta" href="#modal">Watch Now <span class="card__icon" aria-hidden="true">▶</span></a>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title"><a href="#">Rocking Horse, Pinball Machine, Barograph</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--square">
+          <a class="carousel__more" href="#">See All Episodes</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- CUADRÍCULA (CSS Grid): Latest Stories -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Latest Stories</h2>
+        <div class="articles">
+      <article class="article">
+        <img class="article__image" src="img/story-01.jpg" alt="Kwanzaa: The African Celebration of Unity and Culture" loading="lazy">
+        <h3 class="article__title"><a href="#">Kwanzaa: The African Celebration of Unity and Culture</a></h3>
+        <p class="article__author">By: Lucy Sherriff</p>
+      </article>
+      <article class="article">
+        <img class="article__image" src="img/story-02.jpg" alt="Juan Ibarra Names his New Baby in Honor of an Old Friend" loading="lazy">
+        <h3 class="article__title"><a href="#">Juan Ibarra Names his New Baby in Honor of an Old Friend</a></h3>
+        <p class="article__author">By: Discovery</p>
+      </article>
+      <article class="article">
+        <img class="article__image" src="img/more-01.jpg" alt="Moonshiners’ Mike Cockrell Ties the Knot After 7-Year Engagement" loading="lazy">
+        <h3 class="article__title"><a href="#">Moonshiners’ Mike Cockrell Ties the Knot After 7-Year Engagement</a></h3>
+        <p class="article__author">By: Discovery</p>
+      </article>
+      <article class="article">
+        <img class="article__image" src="img/more-02.jpg" alt="Warm Hazelnut Cocktail Perfect for the Holiday Season" loading="lazy">
+        <h3 class="article__title"><a href="#">Warm Hazelnut Cocktail Perfect for the Holiday Season</a></h3>
+        <p class="article__author">By: Discovery</p>
+      </article>
+      <article class="article">
+        <img class="article__image" src="img/story-05.jpg" alt="Time Dilation, Special Relativity, and Santa’s Delivery Schedule" loading="lazy">
+        <h3 class="article__title"><a href="#">Time Dilation, Special Relativity, and Santa’s Delivery Schedule</a></h3>
+        <p class="article__author">By: Paul M. Sutter</p>
+      </article>
+      <article class="article">
+        <img class="article__image" src="img/story-06.jpg" alt="Meet the Storytellers Sharing Exploration with the World" loading="lazy">
+        <h3 class="article__title"><a href="#">Meet the Storytellers Sharing Exploration with the World</a></h3>
+        <p class="article__author">By: The Explorers Club</p>
+      </article>
+      <article class="article">
+        <img class="article__image" src="img/story-07.jpg" alt="Sea Otters Play and Grow at Georgia Aquarium" loading="lazy">
+        <h3 class="article__title"><a href="#">Sea Otters Play and Grow at Georgia Aquarium</a></h3>
+        <p class="article__author">By: Georgia Aquarium</p>
+      </article>
+      <article class="article">
+        <img class="article__image" src="img/story-08.jpg" alt="Get in the Holiday Spirit in this Winter Waterland" loading="lazy">
+        <h3 class="article__title"><a href="#">Get in the Holiday Spirit in this Winter Waterland</a></h3>
+        <p class="article__author">By: Georgia Aquarium</p>
+      </article>
+      <article class="article">
+        <img class="article__image" src="img/story-09.jpg" alt="Kick the New Year into High Gear with 3 Back-To-Back STREET OUTLAWS Premieres" loading="lazy">
+        <h3 class="article__title"><a href="#">Kick the New Year into High Gear with 3 Back-To-Back STREET OUTLAWS Premieres</a></h3>
+        <p class="article__author">By: Taylor Geib</p>
+      </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <div class="container">
+      <section class="newsletter" aria-labelledby="newsletter-title">
+        <h2 class="newsletter__title" id="newsletter-title">Get the best of Discovery in your inbox</h2>
+        <form class="newsletter__form" action="#">
+          <input class="newsletter__input" type="email" name="email" placeholder="Email address" aria-label="Email address" required>
+          <button class="newsletter__button" type="submit">Sign Up</button>
+          <a class="newsletter__policy" href="#">Privacy Policy</a>
+        </form>
+      </section>
+    </div>
+
+    <!-- CARRUSEL: Here for the Holidays -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Here for the Holidays</h2>
+      </div>
+      <ul class="carousel container" tabindex="0" aria-label="Here for the Holidays">
+        <li class="carousel__item carousel__item--square">
+          <article class="card">
+            <img class="card__image card__image--square" src="img/more-09.jpg" alt="Winter’s Hardest Working Mammals – Reindeer!" loading="lazy">
+            <div class="card__body">
+              <h3 class="card__title"><a href="#">Winter’s Hardest Working Mammals – Reindeer!</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--square">
+          <article class="card">
+            <img class="card__image card__image--square" src="img/holiday-02.jpg" alt="Visit Santa’s Hometown in Finnish Lapland" loading="lazy">
+            <div class="card__body">
+              <h3 class="card__title"><a href="#">Visit Santa’s Hometown in Finnish Lapland</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--square">
+          <article class="card">
+            <img class="card__image card__image--square" src="img/holiday-03.jpg" alt="Winter in the Desert" loading="lazy">
+            <div class="card__body">
+              <h3 class="card__title"><a href="#">Winter in the Desert</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--square">
+          <article class="card">
+            <img class="card__image card__image--square" src="img/holiday-04.jpg" alt="Evergreen Trees: Not Just for Christmas" loading="lazy">
+            <div class="card__body">
+              <h3 class="card__title"><a href="#">Evergreen Trees: Not Just for Christmas</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--square">
+          <article class="card">
+            <img class="card__image card__image--square" src="img/holiday-05.jpg" alt="6 Global Christmas Traditions" loading="lazy">
+            <div class="card__body">
+              <h3 class="card__title"><a href="#">6 Global Christmas Traditions</a></h3>
+            </div>
+          </article>
+        </li>
+        <li class="carousel__item carousel__item--square">
+          <a class="carousel__more" href="#">See More Seasonal Stories</a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <div class="container">
+      <nav aria-label="Footer">
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="#">Site Map</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Visitor Agreement</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Privacy Notice</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">AdChoices</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">About</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Advertise</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Careers at Discovery</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">TV Ratings</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Help</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">California Privacy Notice</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">CA Do Not Sell My Info</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Accessibility</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__text">The Discovery Family of Networks</p>
+        <p class="footer__text">© 2021 Discovery or its subsidiaries and affiliates. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL (sin JavaScript): se abre con href="#modal" y se cierra con href="#!" -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <a class="modal__overlay" href="#!" aria-label="Close"></a>
+    <div class="modal__window">
+      <a class="modal__close" href="#!" aria-label="Close">×</a>
+      <h2 class="modal__title" id="modal-title">Watch on discovery+</h2>
+      <p class="modal__text">Start your free trial to stream this episode and thousands more.</p>
+      <a class="modal__button" href="#!">Start free trial</a>
+    </div>
+  </div>
+
+</body>
+</html>
